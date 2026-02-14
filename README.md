@@ -1,3 +1,10 @@
+---
+title: "Multi-view Learning"
+aliases: ["Multiview learning", "Multi-source learning"]
+tags:
+  - multiview
+  - representation-learning
+---
 # Multi-view learning
 
 - **Overview**
@@ -22,8 +29,12 @@
 - **Multi-view Metric Learning**
   - [Multiview Metric Learning with Global Consistencyand Local Smoothness](http://www.jdl.link/doc/2011/2012721775521017_tist2012_zhai.pdf) (2012) *Deming Zhai, Hong Chang, Shiguang Shan, Xilin Chen, Wen Gao*
 
-### Software
+## Software
 - **Python**
   - multiview ([PyPI](https://pypi.org/project/multiview/))
   - mvlearn ([Homepage](https://mvlearn.neurodata.io/), [PyPI](https://pypi.org/project/mvlearn/), [Paper](https://arxiv.org/pdf/2005.11890.pdf))
   - Multiview-FDA ([Homepage](https://github.com/tdiethe/Multiview-FDA))
+
+## Related Topics
+- [Feature Extraction](https://mlpapers.org/feature-extraction/)
+- [Ensemble Learning](https://mlpapers.org/ensemble-learning/)
