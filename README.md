@@ -1,10 +1,3 @@
----
-title: "Multi-view Learning"
-aliases: ["Multiview learning", "Multi-source learning"]
-tags:
-  - multiview
-  - representation-learning
----
 # Multi-view learning
 
 - **Overview**
