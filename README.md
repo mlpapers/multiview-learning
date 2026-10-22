@@ -9,7 +9,7 @@
 - **Co-training** - Classifiers trained on separate views exchange confident labels for unlabeled examples. The original guarantee assumes each view is sufficient and the views are conditionally independent given the label. [Blum and Mitchell 1998](<https://www.cs.cmu.edu/~avrim/Papers/cotrain.pdf> "Combining labeled and unlabeled data with co-training; COLT").
 - **Analyzing Co-training** - Examines how view independence and feature splits affect co-training; introduces co-EM, which exchanges probabilistic labels between views rather than committing to selected hard labels. [Nigam and Ghani 2000](<https://doi.org/10.1145/354756.354805> "Analyzing the effectiveness and applicability of co-training; CIKM").
 - **Co-regularized Least Squares** - Couples view-specific regressors through an agreement penalty on unlabeled examples. A semiparametric approximation reduces the cost of using a large unlabeled set. [Brefeld et al. 2006](<https://doi.org/10.1145/1143844.1143862> "Efficient co-regularised least squares regression; ICML").
-- **Active Learning with Multiple Views** - Co-Testing requests labels for examples on which view-specific classifiers disagree, combining multiple views with active label acquisition. [Knoblock et al. 2006](<https://arxiv.org/abs/1110.1073> "Active Learning with Multiple Views; JAIR").
+- **Active Learning with Multiple Views** - Co-Testing requests labels for examples on which view-specific classifiers disagree, combining multiple views with active label acquisition. [Muslea et al. 2006](<https://arxiv.org/abs/1110.1073> "Active Learning with Multiple Views; JAIR").
 
 ## Shared representations
 
@@ -31,7 +31,7 @@
 ## Supervised projections and metrics
 
 - **Multi-view Fisher Discriminant Analysis** - Extends kernel Fisher discrimination to aligned views, with sparse and private-direction variants for supervised classification. [Diethe et al. 2010](<https://link.springer.com/chapter/10.1007/978-3-642-15880-3_27> "Constructing Nonlinear Discriminants from Multiple Data Views; LNCS").
-- **Generalized Multiview Analysis** - Learns a discriminative latent space for heterogeneous views using class labels; supports cross-view classification and retrieval with linear and kernel formulations. [docs](<https://users.umiacs.umd.edu/~hal3/docs/daume12gma.pdf>).
+- **Generalized Multiview Analysis** - Learns a discriminative latent space for heterogeneous views using class labels; supports cross-view classification and retrieval with linear and kernel formulations. [Sharma et al. 2012](<https://users.umiacs.umd.edu/~hal3/docs/daume12gma.pdf> "Generalized Multiview Analysis: A discriminative latent space; CVPR").
 - **Multiview Metric Learning** - Combines cross-view correspondence with within-view local smoothness; learns mappings into a shared space for previously unseen samples. [Zhai et al. 2012](<https://vipl.ict.ac.cn/publications/earlier/jour/202212/P020221231570717241981.pdf> "Multiview Metric Learning with Global Consistency and Local Smoothness; ACM Trans. Intell. Syst. Technol.").
 
 ## Multiple kernel learning
@@ -67,8 +67,8 @@
 - **InfoMin** - Studies contrastive view selection: reduce shared information while retaining information needed for the downstream task. Removing task-relevant content violates this principle. [Tian et al. 2020](<https://arxiv.org/abs/2005.10243> "What Makes for Good Views for Contrastive Learning?; NeurIPS").
 - **Gradient-Blending** - Finds that joint models can underperform individual modalities on video benchmarks; weights training losses using estimates of overfitting and generalization across modalities. [Wang et al. 2020](<https://openaccess.thecvf.com/content_CVPR_2020/html/Wang_What_Makes_Training_Multi-Modal_Classification_Networks_Hard_CVPR_2020_paper.html> "What Makes Training Multi-Modal Classification Networks Hard?; CVPR").
 - **MultiBench** - Benchmarks multimodal prediction across domains, measuring task performance, training/inference cost, and robustness to noisy or missing modalities. [Liang et al. 2021](<https://arxiv.org/abs/2107.07502> "MultiBench: Multiscale Benchmarks for Multimodal Representation Learning; NeurIPS").
-- **Recommended comparisons.** - Test the best individual view, feature concatenation, and prediction fusion alongside the proposed method. Report each view's contribution and performance under missing or corrupted inputs. [Liang et al. 2021](<https://arxiv.org/abs/2107.07502> "MultiBench: Multiscale Benchmarks for Multimodal Representation Learning; NeurIPS").
-- **Recommended protocol.** - Split by object or subject while keeping its views together. Record views available during training and deployment; evaluate held-out correlation and downstream utility separately. [Wang et al. 2015](<https://proceedings.mlr.press/v37/wangb15.html> "On Deep Multi-View Representation Learning; ICML"); [docs](<https://jameschapman19.github.io/cca_zoo/>).
+- **Recommended comparisons** - Test the best individual view, feature concatenation, and prediction fusion alongside the proposed method. Report each view's contribution and performance under missing or corrupted inputs. [Liang et al. 2021](<https://arxiv.org/abs/2107.07502> "MultiBench: Multiscale Benchmarks for Multimodal Representation Learning; NeurIPS").
+- **Recommended protocol** - Split by object or subject while keeping its views together. Record views available during training and deployment; evaluate held-out correlation and downstream utility separately. [Wang et al. 2015](<https://proceedings.mlr.press/v37/wangb15.html> "On Deep Multi-View Representation Learning; ICML"); [docs](<https://jameschapman19.github.io/cca_zoo/>).
 
 ## Software
 
